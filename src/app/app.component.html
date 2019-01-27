@@ -1,0 +1,9 @@
+<app-topnav></app-topnav>
+
+<div class="wrap">
+  <router-outlet></router-outlet>
+</div>
+
+<div id="go-to-top" (click)=goToTop() title="Len dau trang" [ngClass]="gttop ? 'show' : 'hide'">
+  <i class="material-icons md-36">keyboard_arrow_up</i>
+</div>

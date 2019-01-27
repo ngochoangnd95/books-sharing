@@ -1,0 +1,10 @@
+<section class="groups">
+  <mat-toolbar color="primary">Top books</mat-toolbar>
+  <div class="books">
+    <div *ngFor="let book of topBooks">
+      <a routerLink="/books/{{book.id}}" class="book" [title]=book.name>
+        <img [src]=book.img [alt]=book.name>
+      </a>
+    </div>
+  </div>
+</section>

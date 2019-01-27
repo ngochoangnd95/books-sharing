@@ -1,0 +1,12 @@
+<section class="groups" *ngFor="let kind of kindOfBooks">
+  <mat-toolbar color="primary" id={{kind}}>{{kind}}</mat-toolbar>
+  <div class="books">
+    <div *ngFor="let book of books">
+      <div class="book" *ngIf="book.kind==kind">
+        <a routerLink="/books/{{book.id}}" [title]=book.name>
+          <img [src]=book.img [alt]=book.name>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

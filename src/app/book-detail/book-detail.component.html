@@ -1,0 +1,17 @@
+<div id="detail" *ngIf="book">
+  <div id="flex-container">
+    <div id="img-container" title={{book.name}}>
+      <img src={{book.img}} alt={{book.name}}>
+    </div>
+    <div id="info">
+      <p id="name"><strong>Ten sach:</strong> {{book.name}}</p>
+      <p id="author"><strong>Tac gia:</strong> {{book.author}}</p>
+      <p id="publisher"><strong>Nha xuat ban:</strong> </p>
+      <div id="rating"><strong>Rating:</strong> </div>
+    </div>
+  </div>
+  <div class="review" *ngIf="book.intro">
+    <h3>Gioi thieu sach:</h3>
+    <p *ngFor="let paragraph of book.intro">{{paragraph}}</p>
+  </div>
+</div>

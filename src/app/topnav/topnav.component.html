@@ -1,0 +1,31 @@
+<div class="header">
+  <div class="wrap">
+    <div class="logo">
+      <a href="/"><img src="../../favicon.ico" alt="logo"></a>
+    </div>
+    
+    <div class="search">
+      <form>
+        <input matInput placeholder="Tim sach">
+        <button mat-button><mat-icon>search</mat-icon></button>
+      </form>
+    </div>
+  
+    <div class="login">
+      <button mat-button>Dang nhap</button>
+    </div>
+  </div>
+</div>
+
+<nav class="menu">
+  <a class="menu-item" routerLink="/">Trang chu</a>
+  <div class="dropdown">
+    <button routerLink="/books">The loai</button>
+    <div class="dropdown-content">
+      <a class="dropdown-item" *ngFor="let kind of kindOfBooks" href="/books#{{kind}}">{{kind}}</a>
+    </div>
+  </div>
+  <a class="menu-item">Muon sach</a>
+  <a class="menu-item">Trao doi</a>
+  <a class="menu-item">Gioi thieu</a>
+</nav>

@@ -1,0 +1,21 @@
+.groups {
+  margin: 60px 0;
+}
+
+.books {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: #f3f3f3;
+}
+
+.book {
+  position: relative;
+  box-sizing: border-box;
+  margin: 25px 15px;
+}
+.book img {
+  height: 226px;
+  box-shadow: 0 0 9px #adadad, 2px 2px 5px #adadad;
+}

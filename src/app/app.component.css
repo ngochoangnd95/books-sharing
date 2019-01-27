@@ -1,0 +1,22 @@
+.wrap {
+  width: 80%;
+  margin: 60px auto;
+}
+
+#go-to-top {
+  position: fixed;
+  bottom: 10%; right: 8%;
+  font-size: 32px;
+  background-color: rgb(33, 50, 74);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.hide {
+  visibility: hidden; opacity: 0;
+}
+.show {
+  visibility: visible; opacity: 1;
+}
